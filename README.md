@@ -1,4 +1,5 @@
-# Speech-Text_EmoRec
+# RAVDESS
+
 To start with the RAVDESS data, you have to run all the the three notebooks in the following order 
  1. Data_Preprocess(RAVDESS).ipynb
  2. Training(RAVDESS).ipynb
