@@ -10,10 +10,10 @@
    2. numpy==1.17.1
    3. librosa==0.4.2
    4. glob3==0.0.1
-   5. sklearn
+   5. matplotlib==3.0.3
    6. seaborn==0.9.1
    7. Keras==2.3.1
-   8. matplotlib==3.0.3
+   8. sklearn
 
 
  # IEMOCAP
