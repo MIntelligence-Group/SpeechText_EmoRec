@@ -26,5 +26,5 @@
    2. 6B token Glove Embedding
    
    
-IEMOCAP_model_architecture.png contains the model architecture for the IEMOCAP (speech+text modality) datasset.  
+IEMOCAP_model_architecture.png contains the model architecture for the IEMOCAP (speech+text modality) dataset.  
 
