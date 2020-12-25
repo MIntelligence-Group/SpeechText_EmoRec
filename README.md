@@ -16,3 +16,12 @@
 
 
  # IEMOCAP
+   To start with the IEMOCAP data, you have to run all the the three notebooks in the following order 
+   1. Data_Preprocess(IEMOCAP).ipynb
+   2. Training(IEMOCAP).ipynb
+   3. Analysis(IEMOCAP).ipynb
+   
+   Additional Requirements for IEMOCAP code
+   1. nltk==3.5
+   2. 6B token Glove Embedding
+
