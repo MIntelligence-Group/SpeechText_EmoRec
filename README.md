@@ -24,4 +24,7 @@
    Additional Requirements for IEMOCAP code
    1. nltk==3.5
    2. 6B token Glove Embedding
+   
+   
+IEMOCAP_model_architecture.png contains the model architecture for the IEMOCAP (speech+text modality) datasset.  
 
