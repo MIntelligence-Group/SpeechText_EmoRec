@@ -2,7 +2,7 @@
 
 ## Note:
 1. The code files are currently private as the corresponding research paper in InterSpeech'21 is under review. They will be made publically available soon after the paper is published/accepted for publication.
-2. The corresponding paper, architecture diagrams and supplementary material containing the detailed results (Embedding plots, Intersection Matrices and Confusion Matrices) will also be shared after paper's publication.
+2. The corresponding paper, architecture diagrams and supplementary material containing the detailed results (Embedding plots, Intersection Matrices and Confusion Matrices) will also be shared later.
 
 ## To Reproduce the results for:
 ### IEMOCAP Dataset
@@ -13,9 +13,9 @@
    
 ### MSP-IMPROV Dataset
    Run all the the three notebooks in the following order:
-   1. Data_Preprocess(IEMOCAP).ipynb
-   2. Training(IEMOCAP).ipynb
-   3. Analysis(IEMOCAP).ipynb
+   1. Data_Preprocess(IMPROV).ipynb
+   2. Training(IMPROV).ipynb
+   3. Analysis(IMPROV).ipynb
 
 ### RAVDESS Dataset
   To start with the RAVDESS data, you have to run all the the three notebooks in the following order:
