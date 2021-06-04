@@ -1,39 +1,69 @@
-# TOWARDS THE EXPLAINABILITY OF MULTIMODAL SPEECH EMOTION RECOGNITION 
+Towards the Explainability of Multimodal Speech Emotion Recognition
+===================================================================
 
-## Note:
-1. The code files are currently private as the corresponding research paper in InterSpeech'21 is under review. They will be made publically available soon after the paper is published/accepted for publication.
-2. The corresponding paper, architecture diagrams and supplementary material containing the detailed results (Embedding plots, Intersection Matrices and Confusion Matrices) will also be shared later.
+Implementation for the paper (Interspeech 2021). The paper has been accepted, its full-text will be shared after publication.<br>
+**[Towards the Explainability of Multimodal Speech Emotion Recognition][1]**<br>
+[Puneet Kumar](https://puneet-kr.github.io/), Vishesh Kaushik, and [Balasubramanian Raman](http://faculty.iitr.ac.in/~balarfma/)  
 
-## To Reproduce the results for:
-### IEMOCAP Dataset
-   Run all the the three notebooks in the following order:
-   1. Data_Preprocess(IEMOCAP).ipynb
-   2. Training(IEMOCAP).ipynb
-   3. Analysis(IEMOCAP).ipynb
-   
-### MSP-IMPROV Dataset
-   Run all the the three notebooks in the following order:
-   1. Data_Preprocess(IMPROV).ipynb
-   2. Training(IMPROV).ipynb
-   3. Analysis(IMPROV).ipynb
+<!--![Overview of Proposed Architecture](architecture.jpg)-->
+<img src="architecture.jpg" width="90%" align="middle">
 
-### RAVDESS Dataset
-  To start with the RAVDESS data, you have to run all the the three notebooks in the following order:
-   1. Data_Preprocess(RAVDESS).ipynb
-   2. Training(RAVDESS).ipynb
-   3. Analysis(RAVDESS).ipynb
+<!---
+If you use this code in your published research, please consider citing:
+```text
+@inproceedings{}
+```
+--->
 
-## Additional Requirements
-For IEMOCAP code
-   1. nltk==3.5
-   2. 6B token Glove Embedding
+Setup and Dependencies
+----------------------
+1. Install Anaconda or Miniconda distribution and create a conda environment with **Python 3.6+**.
+2. Install the requirements using the following command:
+```sh
+pip install -r Requirements.txt
+```
+3. Download [glove.6B.zip][2], unzip and keep in `glove.6B` folder.
+4. Download the required datasets.
 
-For RAVDESS code
-   1. SoundFile==0.9.0
-   2. numpy==1.17.1
-   3. librosa==0.4.2
-   4. glob3==0.0.1
-   5. matplotlib==3.0.3
-   6. seaborn==0.9.1
-   7. Keras==2.3.1
-   8. sklearn   
+Steps to run the Code
+---------------------
+1. **For IEMOCAP Dataset**:<br>
+Run `Data_Preprocess(IEMOCAP).ipynb` in Jupyter Notebook, then <br>
+Run `Training(IEMOCAP).ipynb` in Jupyter Notebook, then <br>
+Run `Analysis(IEMOCAP).ipynb` in Jupyter Notebook.<br>
+OR<br> 
+Run `main_IEMOCAP.py` in the terminal/command-line using the following command:
+```sh
+python main_IEMOCAP.py --epoch=100
+```
+2. **For MSP-IMPROV Dataset**:<br>
+Run `Data_Preprocess(IMPROV).ipynb` in Jupyter Notebook, then <br>
+Run `Training(IMPROV).ipynb` in Jupyter Notebook, then <br>
+Run `Analysis(IMPROV).ipynb` in Jupyter Notebook.<br>
+OR<br> 
+Run `main_IMPROV.py` in the terminal/command-line using the following command:
+```sh
+python main_IMPROV.py --epoch=100
+```
+3. **For RAVDESS Dataset**:<br>
+Run `Data_Preprocess(RAVDESS).ipynb` in Jupyter Notebook, then<br>
+Run `Training(RAVDESS).ipynb` in Jupyter Notebook, then <br>
+Run `Analysis(RAVDESS).ipynb` in Jupyter Notebook.<br>
+OR<br> 
+Run `main_RAVDESS.py` in the terminal/command-line using the following command:
+```sh
+python main_RAVDESS.py --epoch=100
+```
+
+### Saving Model Checkpoints  
+By default, the code saves the model checkpoints in the `log-1` folder. 
+
+### Tensorboard Logging
+The tensorboard log files are saved in the `log-1` folder. These files can be accessed using the following command:
+```sh
+tensorboard --logdir "/log-1"
+```
+
+[1]: https://www.interspeech2021.org/
+[2]: https://nlp.stanford.edu/projects/glove/
+[2]: http://www.t4sa.it/
